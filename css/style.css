@@ -1,0 +1,39 @@
+nav {
+  background-color: #881c1c;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.container .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btn {
+  background-color: #881c1c;
+}
+
+.btn:hover {
+  background-color: #a8431e;
+}
+
+.btn:focus {
+  background-color: #5d2a2c;
+}
+
+button.default {
+  background-color: #cccccc;
+  border-style: solid;
+  border-width: thin;
+  border-color: #999999;
+}
+
+button.default:hover {
+  background-color: #eeeeee;
+}
+
+button.default:focus {
+  background-color: #aaaaaa;
+}

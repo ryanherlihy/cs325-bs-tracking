@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BS Tracking</title>
+  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css" />
+  <link rel='stylesheet' type="text/css" href='css/style.css' />
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo">UMass Computer Science</a>
+    </div>
+  </nav>
+  <div class='container'>
+
+    <!-- Select a Subplan -->
+    <div class='row' id='subplan-select'>
+      <div class='col m8 s12 offset-m2'>
+        <div class='card'>
+          <div class='card-content'>
+            <div class='card-title black-text center-align'>Select a Subplan</div>
+            <hr></hr>
+            <div class='row'>
+              <div class='col m12 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("General Computer Science")'>General Computer Science</button>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col m6 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("Software Engineering")'>Software Engineering</button>
+              </div>
+              <div class='col m6 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("Security and Privacy")'>Security and Privacy</button>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col m6 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("Robotics, Visions, and Graphics")'>Robotics, Visions, and Graphics</button>
+              </div>
+              <div class='col m6 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("Artificial Intelligence")'>Artificial Intelligence</button>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col m6 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("Computer Architecture")'>Computer Architecture</button>
+              </div>
+              <div class='col m6 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("Networking")'>Networking</button>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col m6 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("Software Systems")'>Software Systems</button>
+              </div>
+              <div class='col m6 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("Programming Lang. and Compilers")'>Programming Lang. and Compilers</button>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col m6 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("Theory of Computation")'>Theory of Computation</button>
+              </div>
+              <div class='col m6 s12'>
+                <button class='btn col m12 s12' onClick='selectSubplan("Search and Data Mining")'>Search and Data Mining</button>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col m6 s12 offset-m3'>
+                <a href="index.html">
+                  <button class='btn default col m12 s12 black-text'>Back</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subplan Info -->
+    <div class='row' id='subplan-info' style='display:none'>
+      <div class='col m8 s12 offset-m2'>
+        <div class='card'>
+          <div class='card-content'>
+            <div class='card-title black-text center-align'>Artificial Intelligence</div>
+            <hr></hr>
+            <h6>Required Classes</h6>
+            <ul class='collection' id='subplan-required'></ul>
+            <h6>Two of the Following Classes</h6>
+            <div class='row'>
+              <div class='col m6'>
+                <ul class='collection' id='subplan-choice-two'>
+                  <li class='collection-item center-align'>CS 370</li>
+                  <li class='collection-item center-align'>CS 403</li>
+                  <li class='collection-item center-align'>CS 446</li>
+                  <li class='collection-item center-align'>CS 503</li>
+                </ul>
+              </div>
+              <div class='col m6'>
+                <ul class='collection' id='subplan-choice-two'>
+                  <li class='collection-item center-align'>CS 585</li>
+                  <li class='collection-item center-align'>CS 589</li>
+                  <li class='collection-item center-align'>CS 683</li>
+                </ul>
+              </div>
+            </div>
+            <h6>Take Three CS Elecives level 300 or greater.</h6>
+            <br>
+            <div class='row'>
+              <div class='col m6 s12 offset-m3'>
+                <button class='btn default col m12 s12 black-text' onClick='toggleSubplanViews()'>Back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+</body>
+</html>
