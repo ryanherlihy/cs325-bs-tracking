@@ -201,30 +201,3 @@ var data = {
     "NATSCI 494"
   ]
 };
-
-var state = {
-  subplanCourses: ''
-};
-
-function selectSubplan(subplan) {
-  state.subplanCourses = '';
-
-  toggleSubplanViews();
-
-  data.subplans.filter(function(item) {
-    return item.name === subplan
-  })[0].courses.required.forEach(function(course) {
-    state.subplanCourses += '<li class="collection-item center-align">CS ' + course + '<li>';
-  });
-  getSubplanCourses();
-}
-
-function getSubplanCourses() {
-  $('#subplan-required').empty();
-  $('#subplan-required').append(state.subplanCourses);
-}
-
-function toggleSubplanViews() {
-  $('#subplan-select').toggle();
-  $('#subplan-info').toggle();
-}
