@@ -21,26 +21,26 @@
             <div class='row'>
               <div class='col m6 offset-m3'>
                 <ul class='collection'>
-                  <li class='collection-item green accent-1'>CS 121</li>
-                  <li class='collection-item green accent-1'>CS 187</li>
+                  <li class='collection-item' id='cs121' onClick='cs121(event)'>CS 121</li>
+                  <li class='collection-item red lighten-4' id='cs187' onClick='cs187(event)'>CS 187</li>
                 </ul>
               </div>
             </div>
             <div class='row'>
               <div class='col m6'>
                 <ul class='collection'>
-                  <li class='collection-item green accent-1'>M131</li>
-                  <li class='collection-item'>M132</li>
-                  <li class='collection-item red lighten-4'>M233 or S515</li>
-                  <li class='collection-item red lighten-4'>M235</li>
+                  <li class='collection-item' id='m131' onClick='m131(event)'>M131</li>
+                  <li class='collection-item red lighten-4' id='m132' onClick='m132(event)'>M132</li>
+                  <li class='collection-item red lighten-4' id='m233-s515' onClick='m233s515(event)'>M233 or S515</li>
+                  <li class='collection-item red lighten-4' id='m235' onClick='m235(event)'>M235</li>
                 </ul>
               </div>
               <div class='col m6'>
                 <ul class='collection'>
-                  <li class='collection-item green accent-1'>CS 220</li>
-                  <li class='collection-item'>CS 230</li>
-                  <li class='collection-item'>CS 240</li>
-                  <li class='collection-item'>CS 250</li>
+                  <li class='collection-item red lighten-4' id='cs220' onClick='cs200s(event)'>CS 220</li>
+                  <li class='collection-item red lighten-4' id='cs230' onClick='cs200s(event)'>CS 230</li>
+                  <li class='collection-item red lighten-4' id='cs240' onClick='cs200s(event)'>CS 240</li>
+                  <li class='collection-item red lighten-4' id='cs250' onClick='cs200s(event)'>CS 250</li>
                 </ul>
               </div>
             </div>
@@ -58,5 +58,6 @@
   </div>
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="materialize/js/materialize.min.js"></script>
+  <script src='js/core.js'></script>
 </body>
 </html>
