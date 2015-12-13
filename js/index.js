@@ -236,7 +236,7 @@ function generateResults(subplan) {
   if(selected.indexOf("MATH235") === -1)
     math.push("MATH235");
 
-  if(math.length >== 3){
+  if(math.length >= 3){
     console.log("You need to take the following math classes:" + math);
   }else{
     console.log("You've successfully taken all of the required math classes.");
