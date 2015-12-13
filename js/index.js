@@ -202,6 +202,41 @@ var data = {
   ]
 };
 
+function generateResults(subplan) {
+
+  //pushes all courses into an array
+  var selected = [];
+  $('#container input:checked').each(function() {
+    selected.push($(this).attr('id'));
+  });
+
+  data.subplans.filter(function(item) {
+    return item.name === subplan
+  })[0].courses.required.forEach(function(course) {
+    console.log(course);
+  });
+
+  data.subplans.filter(function(item) {
+    return item.name === subplan
+  })[0].courses.oneFrom.forEach(function(oneFrom) {
+    console.log(oneFrom);
+  });
+
+  data.subplans.filter(function(item) {
+    return item.name === subplan
+  })[0].courses.twoFrom.forEach(function(twoFrom) {
+    console.log(twoFrom);
+  });
+
+  data.subplans.filter(function(item) {
+    return item.name === subplan
+  })[0].courses.elective.forEach(function(elective) {
+    console.log(elective);
+  });
+
+
+}
+
 function next(thisSection, nextSection) {
   $(thisSection).hide();
   $(nextSection).show();
