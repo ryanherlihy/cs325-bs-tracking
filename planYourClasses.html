@@ -11,7 +11,7 @@
       <a href="index.html" class="brand-logo">UMass Computer Science</a>
     </div>
   </nav>
-  <div class='container'>
+  <div class='container' id='container'>
     <div class='row'>
       <div class='col l6 m6 s12 offset-m3 offset-l3'>
         <div class='card'>
@@ -143,35 +143,48 @@
               </div>
             </div>
 
-            <!-- Int Exp and Jr Writing -->
+            <!-- 300 level -->
             <div id='300-level' style='display:none'>
               <h5 class='center-align'>What other 300 level or greater CS classes have you taken?</h5>
               <div class='row'>
-                <p>
-                  <input type="checkbox" id="cs305" />
-                  <label for="cs305">CS 305</label>
-                </p>
-              </div>
-              <div class='row'>
-                <p>
-                  <input type="checkbox" id="cs320" />
-                  <label for="cs320">CS 320</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="cs326" />
-                  <label for="cs326">CS 326</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="n494" />
-                  <label for="n494">NATSCI 494</label>
-                </p>
+
               </div>
               <div class='row'>
                 <div class='col m6 s12'>
-                  <button class='btn default col m12 s12 black-text' onClick='next("#math", "#200-level")'>Back</button>
+                  <button class='btn default col m12 s12 black-text' onClick='next("#300-level", "#int-jr")'>Back</button>
                 </div>
                 <div class='col m6 s12'>
-                  <button class='btn default col m12 s12 black-text' onClick='next("#math", "#200-level")'>Next</button>
+                  <button class='btn default col m12 s12 black-text' onClick='next("#300-level", "#subplan-choice")'>Next</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subplans -->
+            <div id='subplan-choice' style='display:none'>
+              <h5 class='center-align'>Select your subplan</h5>
+              <div class='row'>
+                <div class="input-field col s12">
+                  <select class='browser-default'>
+                    <option value="0">General Computer Science</option>
+                    <option value="1">Software Engineering</option>
+                    <option value="2">Security and Privacy</option>
+                    <option value="3">Robotics, Vision, and Graphics</option>
+                    <option value="4">Artificial Intelligence</option>
+                    <option value="5">Computer Architecture</option>
+                    <option value="6">Networking</option>
+                    <option value="7">Software Systems</option>
+                    <option value="8">Programming Lang. and Compilers</option>
+                    <option value="9">Theory of Computation</option>
+                    <option value="10">Search and Data Mining</option>
+                  </select>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='next("#subplan-choice", "#300-level")'>Back</button>
+                </div>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='next("#subplan-choice", "#subplan-choice")'>Next</button>
                 </div>
               </div>
             </div>
@@ -183,6 +196,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="materialize/js/materialize.min.js"></script>
+  <script src="js/initialize.js"></script>
   <script src='js/index.js'></script>
 </body>
 </html>
