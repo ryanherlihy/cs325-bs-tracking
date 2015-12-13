@@ -32,7 +32,7 @@ var data = {
           "348", "445", "453"
         ],
         twoFrom: [
-          "365", "391LI", "466", "660", "ECE 597AB"
+          "365", "391LI", "466", "660", "ECE597AB"
         ],
         electives: 2
       }
@@ -68,7 +68,7 @@ var data = {
           "311", "320", "535", "635"
         ],
         twoFrom: [
-          "377", "410", "445", "453", "499T/P", "496", "501", "520", "530", "610", "653", "677", "ECE 353", "ECE 354", "ECE 558"
+          "377", "410", "445", "453", "499T/P", "496", "501", "520", "530", "610", "653", "677", "ECE353", "ECE354", "ECE558"
         ],
         electives: 2
       }
@@ -119,7 +119,7 @@ var data = {
           "377", "445", "453", "535", "391IB"
         ],
         twoFrom: [
-          "499T/P", "496", "513", "575", "601", "611", "MATH 411"
+          "499T/P", "496", "513", "575", "601", "611", "MATH411"
         ],
         electives: 2
       }
@@ -188,16 +188,26 @@ var data = {
     "677",
     "683",
     "690IV",
-    "ECE 353",
-    "ECE 354",
-    "ECE 558",
-    "ECE 597AB",
-    "MATH 131",
-    "MATH 132",
-    "MATH 233",
-    "MATH 235",
-    "MATH 411",
-    "STAT 515",
-    "NATSCI 494"
+    "ECE353",
+    "ECE354",
+    "ECE558",
+    "ECE597AB",
+    "MATH131",
+    "MATH132",
+    "MATH233",
+    "MATH235",
+    "MATH411",
+    "STAT515",
+    "NATSCI494"
   ]
 };
+
+function next(thisSection, nextSection) {
+  $(thisSection).hide();
+  $(nextSection).show();
+}
+
+function back(thisSection, backSection) {
+  $(thisSection).hide();
+  $(backSection).show();
+}

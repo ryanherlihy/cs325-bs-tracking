@@ -24,105 +24,128 @@
               <h5 class='center-align'>Have you taken any of the intro CS classes?</h5>
               <div class='row'>
                 <p>
-                  <input type="checkbox" id="cs121" />
-                  <label for="cs121">CS 121</label>
+                  <input type="checkbox" id="121" />
+                  <label for="121">CS 121</label>
                 </p>
                 <p>
-                  <input type="checkbox" id="cs187" />
-                  <label for="cs187">CS 187</label>
+                  <input type="checkbox" id="187" />
+                  <label for="187">CS 187</label>
                 </p>
               </div>
               <div class='row'>
-                <div class='col m6 s12 offset-m3'>
+                <div class='col m6 s12'>
                   <a href="index.html">
-                    <button class='btn default col m12 s12 black-text' onClick=''>Back</button>
+                    <button class='btn default col m12 s12 black-text'>Back</button>
                   </a>
                 </div>
-                <div class='col m6 s12 offset-m3'>
-                  <a href="index.html">
-                    <button class='btn default col m12 s12 black-text' onClick=''>Next</button>
-                  </a>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='next("#intro-cs", "#math")'>Next</button>
                 </div>
               </div>
             </div>
 
             <!-- Math Classes -->
-            <div id='math'>
+            <div id='math' style='display:none'>
               <h5 class='center-align'>Have you taken any of the following Math classes?</h5>
               <div class='row'>
                 <p>
-                  <input type="checkbox" id="m131" />
-                  <label for="m131">MATH 131</label>
+                  <input type="checkbox" id="MATH131" />
+                  <label for="MATH131">MATH 131</label>
                 </p>
                 <p>
-                  <input type="checkbox" id="m132" />
-                  <label for="m132">MATH 132</label>
+                  <input type="checkbox" id="MATH132" />
+                  <label for="MATH132">MATH 132</label>
                 </p>
                 <p>
-                  <input type="checkbox" id="m233" />
-                  <label for="m233">MATH 233</label>
+                  <input type="checkbox" id="MATH233" />
+                  <label for="MATH233">MATH 233</label>
                 </p>
                 <p>
-                  <input type="checkbox" id="s515" />
-                  <label for="s515">STAT 515</label>
+                  <input type="checkbox" id="STAT515" />
+                  <label for="STAT515">STAT 515</label>
                 </p>
                 <p>
-                  <input type="checkbox" id="m235" />
-                  <label for="m235">MATH 235</label>
+                  <input type="checkbox" id="MATH235" />
+                  <label for="MATH235">MATH 235</label>
                 </p>
               </div>
               <div class='row'>
-                <div class='col m6 s12 offset-m3'>
-                  <a href="index.html">
-                    <button class='btn default col m12 s12 black-text' onClick=''>Back</button>
-                  </a>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='back("#math", "#intro-cs")'>Back</button>
                 </div>
-                <div class='col m6 s12 offset-m3'>
-                  <a href="index.html">
-                    <button class='btn default col m12 s12 black-text' onClick=''>Next</button>
-                  </a>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='next("#math", "#200-level")'>Next</button>
                 </div>
               </div>
             </div>
 
             <!-- 200 Level -->
-            <div id='200-level'>
+            <div id='200-level' style='display:none'>
               <h5 class='center-align'>Have you taken any of the following 200 level CS classes?</h5>
               <div class='row'>
                 <p>
-                  <input type="checkbox" id="cs220" />
-                  <label for="cs220">CS 220</label>
+                  <input type="checkbox" id="220" />
+                  <label for="220">CS 220</label>
                 </p>
                 <p>
-                  <input type="checkbox" id="cs230" />
-                  <label for="cs230">CS 230</label>
+                  <input type="checkbox" id="230" />
+                  <label for="230">CS 230</label>
                 </p>
                 <p>
-                  <input type="checkbox" id="cs240" />
-                  <label for="cs240">CS 240</label>
+                  <input type="checkbox" id="240" />
+                  <label for="240">CS 240</label>
                 </p>
                 <p>
-                  <input type="checkbox" id="cs250" />
-                  <label for="cs250">CS 250</label>
+                  <input type="checkbox" id="250" />
+                  <label for="250">CS 250</label>
                 </p>
               </div>
               <div class='row'>
-                <div class='col m6 s12 offset-m3'>
-                  <a href="index.html">
-                    <button class='btn default col m12 s12 black-text' onClick=''>Back</button>
-                  </a>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='back("#200-level", "#math")'>Back</button>
                 </div>
-                <div class='col m6 s12 offset-m3'>
-                  <a href="index.html">
-                    <button class='btn default col m12 s12 black-text' onClick=''>Next</button>
-                  </a>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='next("#200-level", "#int-jr")'>Next</button>
                 </div>
               </div>
             </div>
 
             <!-- Int Exp and Jr Writing -->
-            <div id='int-jr'>
+            <div id='int-jr' style='display:none'>
               <h5 class='center-align'>Have you taken Junior Year Writing or any Integrative Experience Classes?</h5>
+              <div class='row'>
+                <p>
+                  <input type="checkbox" id="305" />
+                  <label for="305">CS 305</label>
+                </p>
+              </div>
+              <div class='row'>
+                <p>
+                  <input type="checkbox" id="320" />
+                  <label for="320">CS 320</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="326" />
+                  <label for="326">CS 326</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="NATSCI494" />
+                  <label for="NATSCI494">NATSCI 494</label>
+                </p>
+              </div>
+              <div class='row'>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='back("#int-jr", "#200-level")'>Back</button>
+                </div>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='next("#int-jr", "#300-level")'>Next</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Int Exp and Jr Writing -->
+            <div id='300-level' style='display:none'>
+              <h5 class='center-align'>What other 300 level or greater CS classes have you taken?</h5>
               <div class='row'>
                 <p>
                   <input type="checkbox" id="cs305" />
@@ -144,52 +167,11 @@
                 </p>
               </div>
               <div class='row'>
-                <div class='col m6 s12 offset-m3'>
-                  <a href="index.html">
-                    <button class='btn default col m12 s12 black-text' onClick=''>Back</button>
-                  </a>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='next("#math", "#200-level")'>Back</button>
                 </div>
-                <div class='col m6 s12 offset-m3'>
-                  <a href="index.html">
-                    <button class='btn default col m12 s12 black-text' onClick=''>Next</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Int Exp and Jr Writing -->
-            <div id='300-level'>
-              <h5 class='center-align'>Have you taken Junior Year Writing or any Integrative Experience Classes?</h5>
-              <div class='row'>
-                <p>
-                  <input type="checkbox" id="cs305" />
-                  <label for="cs305">CS 305</label>
-                </p>
-              </div>
-              <div class='row'>
-                <p>
-                  <input type="checkbox" id="cs320" />
-                  <label for="cs320">CS 320</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="cs326" />
-                  <label for="cs326">CS 326</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="n494" />
-                  <label for="n494">NATSCI 494</label>
-                </p>
-              </div>
-              <div class='row'>
-                <div class='col m6 s12 offset-m3'>
-                  <a href="index.html">
-                    <button class='btn default col m12 s12 black-text' onClick=''>Back</button>
-                  </a>
-                </div>
-                <div class='col m6 s12 offset-m3'>
-                  <a href="index.html">
-                    <button class='btn default col m12 s12 black-text' onClick=''>Next</button>
-                  </a>
+                <div class='col m6 s12'>
+                  <button class='btn default col m12 s12 black-text' onClick='next("#math", "#200-level")'>Next</button>
                 </div>
               </div>
             </div>
