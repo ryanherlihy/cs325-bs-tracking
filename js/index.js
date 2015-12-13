@@ -236,7 +236,7 @@ function generateResults(subplan) {
   if(selected.indexOf("MATH235") === -1)
     math.push("MATH235");
 
-  if(math.length >== 3){
+  if(math.length >= 3){
     console.log("You need to take the following math classes:" + math);
   }else{
     console.log("You've successfully taken all of the required math classes.");
@@ -279,10 +279,10 @@ function generateResults(subplan) {
   if(selected.indexOf("NATSCI494") === -1)
     intexp.push("NATSCI494");
 
-  if(intexp.length < 1){
+  if(intexp.length === 3){
     console.log("You need to take one of following Integrative Experience Classes:" + intexp);
   }else{
-    console.log("You've successfully taken all of the Integrative Experience Classes.");
+    console.log("You've successfully taken the Integrative Experience requirement.");
   }
 
   //Required courses
