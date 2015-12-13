@@ -13,7 +13,7 @@
   </nav>
   <div class='container' id='container'>
     <div class='row'>
-      <div class='col l6 m6 s12 offset-m3 offset-l3'>
+      <div class='col l8 m8 s12 offset-m2 offset-l2'>
         <div class='card'>
           <div class='card-content'>
             <div class='card-title black-text center-align'>Plan Your Classes</div>
@@ -33,13 +33,13 @@
                 </p>
               </div>
               <div class='row'>
-                <div class='col m6 s12'>
+                <div class='col m6 s6'>
                   <a href="index.html">
                     <button class='btn default col m12 s12 black-text'>Back</button>
                   </a>
                 </div>
-                <div class='col m6 s12'>
-                  <button class='btn default col m12 s12 black-text' onClick='next("#intro-cs", "#math")'>Next</button>
+                <div class='col m6 s6'>
+                  <button class='btn col m12 s12 white-text' onClick='next("#intro-cs", "#math")'>Next</button>
                 </div>
               </div>
             </div>
@@ -70,11 +70,11 @@
                 </p>
               </div>
               <div class='row'>
-                <div class='col m6 s12'>
+                <div class='col m6 s6'>
                   <button class='btn default col m12 s12 black-text' onClick='back("#math", "#intro-cs")'>Back</button>
                 </div>
-                <div class='col m6 s12'>
-                  <button class='btn default col m12 s12 black-text' onClick='next("#math", "#200-level")'>Next</button>
+                <div class='col m6 s6'>
+                  <button class='btn col m12 s12 white-text' onClick='next("#math", "#200-level")'>Next</button>
                 </div>
               </div>
             </div>
@@ -101,11 +101,11 @@
                 </p>
               </div>
               <div class='row'>
-                <div class='col m6 s12'>
+                <div class='col m6 s6'>
                   <button class='btn default col m12 s12 black-text' onClick='back("#200-level", "#math")'>Back</button>
                 </div>
-                <div class='col m6 s12'>
-                  <button class='btn default col m12 s12 black-text' onClick='next("#200-level", "#int-jr")'>Next</button>
+                <div class='col m6 s6'>
+                  <button class='btn col m12 s12 white-text' onClick='next("#200-level", "#int-jr")'>Next</button>
                 </div>
               </div>
             </div>
@@ -134,27 +134,224 @@
                 </p>
               </div>
               <div class='row'>
-                <div class='col m6 s12'>
+                <div class='col m6 s6'>
                   <button class='btn default col m12 s12 black-text' onClick='back("#int-jr", "#200-level")'>Back</button>
                 </div>
-                <div class='col m6 s12'>
-                  <button class='btn default col m12 s12 black-text' onClick='next("#int-jr", "#300-level")'>Next</button>
+                <div class='col m6 s6'>
+                  <button class='btn col m12 s12 white-text' onClick='next("#int-jr", "#300-level")'>Next</button>
                 </div>
               </div>
             </div>
 
             <!-- 300 level -->
             <div id='300-level' style='display:none'>
-              <h5 class='center-align'>What other 300 level or greater CS classes have you taken?</h5>
+              <h5 class='center-align'>What other 300 level or greater CS, ECE, or Math electives have you taken?</h5>
               <div class='row'>
-
+                <div class='col l4 m4 s6'>
+                  <p>
+                    <input type="checkbox" id="325" />
+                    <label for="325">CS 325</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="348" />
+                    <label for="348">CS 348</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="365" />
+                    <label for="365">CS 365</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="370" />
+                    <label for="370">CS 370</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="377" />
+                    <label for="377">CS 377</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="383" />
+                    <label for="383">CS 383</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="390CG" />
+                    <label for="390CG">CS 390CG</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="391IB" />
+                    <label for="391IB">CS 391IB</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="391LI" />
+                    <label for="391LI">CS 391LI</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="403" />
+                    <label for="403">CS 403</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="410" />
+                    <label for="410">CS 410</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="445" />
+                    <label for="445">CS 445</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="446" />
+                    <label for="446">CS 446</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="453" />
+                    <label for="453">CS 453</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="460" />
+                    <label for="460">CS 460</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="466" />
+                    <label for="466">CS 466</label>
+                  </p>
+                </div>
+                <div class='col l4 m4 s6'>
+                  <p>
+                    <input type="checkbox" id="473" />
+                    <label for="473">CS 473</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="474" />
+                    <label for="474">CS 474</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="491G" />
+                    <label for="491G">CS 491G</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="496" />
+                    <label for="496">CS 496</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="499T/P" />
+                    <label for="499T/P">CS 499T/P</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="501" />
+                    <label for="501">CS 501</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="503" />
+                    <label for="503">CS 503</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="513" />
+                    <label for="513">CS 513</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="520" />
+                    <label for="520">CS 520</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="521" />
+                    <label for="521">CS 521</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="529" />
+                    <label for="529">CS 529</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="530" />
+                    <label for="530">CS 530</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="535" />
+                    <label for="535">CS 535</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="575" />
+                    <label for="575">CS 575</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="585" />
+                    <label for="585">CS 585</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="589" />
+                    <label for="589">CS 589</label>
+                  </p>
+                </div>
+                <div class='col l4 m4 s6 offset-s3'>
+                  <p>
+                    <input type="checkbox" id="601" />
+                    <label for="601">CS 601</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="603" />
+                    <label for="603">CS 603</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="610" />
+                    <label for="610">CS 610</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="611" />
+                    <label for="611">CS 611</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="617" />
+                    <label for="617">CS 617</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="635" />
+                    <label for="635">CS 635</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="653" />
+                    <label for="653">CS 653</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="660" />
+                    <label for="660">CS 660</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="677" />
+                    <label for="677">CS 677</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="683" />
+                    <label for="683">CS 683</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="690IV" />
+                    <label for="690IV">CS 690IV</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="ECE353" />
+                    <label for="ECE353">ECE 353</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="ECE354" />
+                    <label for="ECE354">ECE 354</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="ECE558" />
+                    <label for="ECE558">ECE 558</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="ECE597AB" />
+                    <label for="ECE597AB">ECE 597AB</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="MATH411" />
+                    <label for="MATH411">MATH 411</label>
+                  </p>
+                </div>
               </div>
               <div class='row'>
-                <div class='col m6 s12'>
-                  <button class='btn default col m12 s12 black-text' onClick='next("#300-level", "#int-jr")'>Back</button>
+                <div class='col m6 s6'>
+                  <button class='btn col m12 s12 white-text' onClick='next("#300-level", "#int-jr")'>Back</button>
                 </div>
-                <div class='col m6 s12'>
-                  <button class='btn default col m12 s12 black-text' onClick='next("#300-level", "#subplan-choice")'>Next</button>
+                <div class='col m6 s6'>
+                  <button class='btn col m12 s12 white-text' onClick='next("#300-level", "#subplan-choice")'>Next</button>
                 </div>
               </div>
             </div>
@@ -180,11 +377,24 @@
                 </div>
               </div>
               <div class='row'>
-                <div class='col m6 s12'>
-                  <button class='btn default col m12 s12 black-text' onClick='next("#subplan-choice", "#300-level")'>Back</button>
+                <div class='col m6 s6'>
+                  <button class='btn default col m12 s12 black-text' onClick='back("#subplan-choice", "#300-level")'>Back</button>
                 </div>
-                <div class='col m6 s12'>
-                  <button class='btn default col m12 s12 black-text' onClick='next("#subplan-choice", "#subplan-choice")'>Next</button>
+                <div class='col m6 s6'>
+                  <button class='btn col m12 s12 white-text' onClick='next("#subplan-choice", "#final-part")'>Next</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Final part -->
+            <div id='final-part' style='display:none'>
+              <h5 class='center-align'>Select your subplan</h5>
+              <div class='row'>
+
+              </div>
+              <div class='row'>
+                <div class='col m6 s6 offset-m3 offset-s3'>
+                  <button class='btn default col m12 s12 black-text' onClick='back("#final-part", "#subplan-choice")'>Back</button>
                 </div>
               </div>
             </div>
