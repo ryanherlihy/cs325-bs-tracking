@@ -361,7 +361,7 @@
               <h5 class='center-align'>Select your subplan</h5>
               <div class='row'>
                 <div class="input-field col s12">
-                  <select class='browser-default'>
+                  <select class='browser-default' id='subplan-select'>
                     <option value="0">General Computer Science</option>
                     <option value="1">Software Engineering</option>
                     <option value="2">Security and Privacy</option>
@@ -381,16 +381,24 @@
                   <button class='btn default col m12 s12 black-text' onClick='back("#subplan-choice", "#300-level")'>Back</button>
                 </div>
                 <div class='col m6 s6'>
-                  <button class='btn col m12 s12 white-text' onClick='next("#subplan-choice", "#final-part")'>Next</button>
+                  <button class='btn col m12 s12 white-text' onClick='generateResults()'>Next</button>
                 </div>
               </div>
             </div>
 
             <!-- Final part -->
             <div id='final-part' style='display:none'>
-              <h5 class='center-align'>Select your subplan</h5>
+              <h5 class='center-align'>Results</h5>
               <div class='row'>
-
+                <h6 id='intro-results'></h6>
+                <h6 id='math-results'></h6>
+                <h6 id='200-results'></h6>
+                <h6 id='jr-results'></h6>
+                <h6 id='intexp-results'></h6>
+                <h6 id='req-results'></h6>
+                <h6 id='one-results'></h6>
+                <h6 id='two-results'></h6>
+                <h6 id='elective-results'></h6>
               </div>
               <div class='row'>
                 <div class='col m6 s6 offset-m3 offset-s3'>
