@@ -243,16 +243,16 @@ function generateResults() {
   //Math courses
   var math = [];
   if(selected.indexOf("MATH131") === -1)
-    math.push("MATH 131");
+    math.push("MATH131");
   if(selected.indexOf("MATH132") === -1)
-    math.push("MATH 132");
+    math.push("MATH132");
   if(selected.indexOf("MATH233") === -1 && selected.indexOf("STAT515") === -1) {
-    math.push("MATH 233 or STAT 515");
+    math.push("MATH233 or STAT 515");
   }
   if(selected.indexOf("MATH235") === -1)
-    math.push("MATH 235");
+    math.push("MATH235");
 
-  if(math.length >= 3){
+  if(math.length >= 2){
     $('#math-results').html("You need to take the following math classes: " + arrayToString(math));
     console.log("You need to take the following math classes:" + math);
   }else{
@@ -299,7 +299,7 @@ function generateResults() {
   if(selected.indexOf("326") === -1)
     intexp.push("326");
   if(selected.indexOf("NATSCI494") === -1)
-    intexp.push("NATSCI 494");
+    intexp.push("NATSCI494");
 
   if(intexp.length === 3){
     $('#intexp-results').html("You need to take one of following Integrative Experience Classes: " + arrayToString(intexp));
@@ -326,7 +326,6 @@ function generateResults() {
   if(data.subplans.filter(function(item) {
     return item.name === subplan
   })[0].courses.oneFrom){
-
       data.subplans.filter(function(item) {
       return item.name === subplan
     })[0].courses.oneFrom.forEach(function(oneFrom) {
@@ -340,7 +339,7 @@ function generateResults() {
       $('#one-results').html("You need to take at least one of the following one from courses: " + arrayToString(one));
       console.log("You need to take at least one of the following one from courses:" + one);
     }else{
-      $('#one-results').html("You have successfully taken all of the one from courses.");
+      // $('#one-results').html("You have successfully taken all of the one from courses.");
       console.log("You have successfully taken all of the one from courses.");
     }
   }
@@ -366,10 +365,10 @@ function generateResults() {
       console.log("You need to take at least two of the following two from courses:" + two);
     }
     else if(twoCounter == 1){
-      $('#two-results').html();
+      $('#two-results').html("You need to take at least one of the following two from courses: " + arrayToString(two));
       console.log("You need to take at least one of the following two from courses: " + arrayToString(two));
     }else{
-      $('#two-results').html();
+      // $('#two-results').html("You have successfully taken all of the one from courses.");
       console.log("You have successfully taken all of the one from courses.");
     }
 
@@ -377,10 +376,17 @@ function generateResults() {
 
   //Number of electives
   var ele = []
+  // var upperCS = data.courses.slice(7, 53);
+  // var f = upperCS.filter(function(item) {
+  //   return data.subplans.filter(function(item) {
+  //     return item.name === subplan;
+  //   })[0].courses.required.indexOf(item) === -1
+  // });
+
   data.subplans.filter(function(item) {
     return item.name === subplan
   })[0].courses.electives.forEach(function(elective) {
-    $('#elective-results').html(elective);
+    $('#elective-results').html("You need to take " + elective + " additional CS courses level 300 or greater.");
     console.log(elective);
   });
 
